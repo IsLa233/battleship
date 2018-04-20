@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js array</title>
+</head>
+  <body>
+    <script>
+
+      var pink = [10, 20, 30, 40, 50, 60, 70, 14, 6, 3, 5, 12, 666, 888, 233];
+
+      var min = pink[0];
+      var item;
+      for (var i = 1; i < pink.length; i++){
+          if(min > pink[i]){
+          min = pink[i]
+          item = [i]
+        };
+      };
+
+
+
+      document.write(min + "," + item);
+
+ 
+    </script>
+  </body>
+</html>
