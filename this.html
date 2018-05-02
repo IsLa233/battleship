@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      var audi = {
+      make: 'audi',
+      model: 'A6',
+      year: 2016,
+      color: 'black',
+      passengers: 4,
+      convertible: false,
+      mileage: 500,
+      drive: function(){
+        if (this.started) {
+          alert("zoom!zoom!!!");
+        } else {
+          alert("please start the engine first!");
+        }
+      },
+      setcolor: function (c) {
+        this.color = (c);
+      },
+      
+      getcolor: function () {
+        return this.color;
+      },
+        
+      started: false,
+
+      start: function () {
+        this.started = true;
+      },
+
+      stop: function () {
+        this.started = false;
+      }
+    };
+    
+
+    document.write(audi.getcolor() + "<br>");
+    audi.setcolor('pink');
+    document.write(audi.getcolor() + "<br>");
+    audi.start();
+    audi.drive();
+  </script>
+</body>
+</html>
