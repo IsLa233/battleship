@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function init(){
+      var title = document.getElementById("hi");
+      var pic = document.getElementById("blhxpic");
+      // alert(title.innerHTML);
+      title.innerHTML = "fuckyou world";
+      title.setAttribute("class","fuckyouman");
+      pic.setAttribute("src","2.jpg");
+
+    }
+    window.onload = init;
+  </script>
+</head>
+<body>
+  <h1 id = "hi">hello world!</h1>
+  <img id="blhxpic" src="1.jpg" alt="azur lane">
+</body>
+</html>
